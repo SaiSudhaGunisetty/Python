@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+    <table align="center" border="2" width="8">
+        <div >
+            <br>
+
+                <h1 style="font-family:verdana;" align="center" ><b>Bike rental Prediction</b></h1>
+
+        </div>
+<style>
+body {
+  background-image: url(https://cdn.shopify.com/s/files/1/0301/5793/t/15/assets/SEATING-POSITION-1542149667589-1559932197324.png);
+}
+</style>
+<body >
+    <form action = "http://localhost:9000/predict" method = "POST">
+    <br>
+        <h4 align="center"><b>Please specify below values</b></h4>
+        <table align="center" style="margin-top:1">
+            <tr><td>Season</td><td><input type = "text" name = "season" /></td></tr>
+            <tr><td>Year</td><td><input type = "text" name = "yr" /></td></tr>
+             <tr><td>Qtrs</td><td><input type = "text" name = "qtrs" /></td></tr>
+            <tr><td>Month</td><td><input type = "text" name = "mnth" /></td></tr>
+            <tr><td>Holiday</td><td><input type ="text" name = "holiday" /></td></tr>
+            <tr><td>Weekday</td><td><input type ="text" name = "weekday" /></td></tr>
+             <tr><td>Workingday</td><td><input type = "text" name = "workingday" /></td></tr>
+            <tr><td>Weathersit</td><td><input type ="text" name = "weathersit" /></td></tr>
+            <tr><td>Temp (in C)</td><td><input type ="text" name = "temp" /></td></tr>
+            <tr><td>Atemp</td><td><input type ="text" name = "atemp" /></td></tr>
+            <tr><td>Wind Speed</td><td><input type ="text" name = "windspeed" /></td></tr>
+
+            </table>
+        <p align="center"><input type = "submit" value = "Predict" /></p>
+        <h4 align="center"><b>Click on the "Browse" button to upload a file:</b></h4>
+
+        <div align="center">
+            <input type="file" align="center"id="myFile" name="filename">
+        </div>
+
+        <p align="center"><input type = "submit" value = "Predict" /></p>
+    </form>
+</body>
+</html>
